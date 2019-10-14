@@ -24,7 +24,7 @@ def savehtml(html):
         f.write(html)
 def main():
     url="http://www.xmrc.com.cn/net/info/resultg.aspx?a=a&g=g&jobtype=9902&releaseTime=365&searchtype=1&keyword=&sortby=updatetime&ascdesc=Desc&PageIndex ={}"
-    i = 187
+    i = 1
     while(True):
         info=gethtml(url.format(i))
         savehtml(info)
